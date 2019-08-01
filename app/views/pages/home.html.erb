@@ -1,2 +1,37 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 text-center">
+      </div>
+      <div class="col-xs-12 col-sm-6 text-center pt-5">
+        <h1>Création de pâtisseries à votre goût</h1>
+        <br>
+        <a class="btn btn-ghost" href="#">Me contacter</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid container-new">
+  <div class="row">
+    <% @blogposts.each do |post| %>
+
+    <div class="col">
+      <%= post.title %>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+  </div>
+</div>
+
+
+
+
