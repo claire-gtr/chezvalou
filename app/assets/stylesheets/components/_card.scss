@@ -1,0 +1,33 @@
+.card {
+  border: none;
+  background-color: transparent;
+  font-family: $body-font;
+}
+
+.card-body {
+  padding: 1.5rem 0;
+}
+
+.card-text {
+  color: white;
+  font-size: 1rem;
+}
+
+.card-img-top {
+  height: 12rem;
+  object-fit: cover;
+}
+
+.card-link {
+  a {
+    color: $hazelnut !important;
+    font-size: 0.8rem;
+    text-decoration: none !important;
+  }
+}
+
+.card-title {
+  h3 {
+    color: $hazelnut;
+  }
+}
