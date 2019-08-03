@@ -10,24 +10,26 @@
 
 .card-text {
   color: white;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .card-img-top {
   height: 12rem;
   object-fit: cover;
+  border-radius: 2px;
 }
 
 .card-link {
-  a {
     color: $hazelnut !important;
-    font-size: 0.8rem;
-    text-decoration: none !important;
-  }
+    font-size: 0.75rem;
+    text-decoration: none;
 }
 
 .card-title {
   h3 {
     color: $hazelnut;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
   }
 }
