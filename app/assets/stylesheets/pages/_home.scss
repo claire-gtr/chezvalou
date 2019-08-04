@@ -1,3 +1,11 @@
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 8rem; /* height of your footer */
+}
+
 .container-red {
   background-color: $rasberry;
 }
@@ -7,6 +15,10 @@
 }
 .title-white h2 {
   color: white;
+}
+
+.title-brown h2 {
+  color: $hazelnut;
 }
 
 h2 {
@@ -64,7 +76,7 @@ p {
 }
 
 .img-about-lg {
-  margin-left: 8rem;
+  margin-left: 12rem;
 }
 
 .text-about {
@@ -74,13 +86,13 @@ p {
 }
 
 .text-about-lg {
-  margin-right: 8rem;
-  margin-left: -12rem;
+  margin-right: 12rem;
+  margin-left: -10rem;
   margin-top: 4rem;
 }
 
 .text-about-xl {
   margin-right: 8rem;
-  margin-left: -14rem;
+  margin-left: -16rem;
   margin-top: 4rem;
 }
