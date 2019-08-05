@@ -75,26 +75,10 @@ p {
   border-radius: 2px;
 }
 
-.img-about-lg {
-  margin-left: 12rem;
-}
-
 .text-about {
   border: $hazelnut 1.5px solid;
   padding: 1.5rem;
-  margin-top: 1rem;
-}
-
-.text-about-lg {
-  margin-right: 12rem;
-  margin-left: -10rem;
-  margin-top: 4rem;
-}
-
-.text-about-xl {
-  margin-right: 8rem;
-  margin-left: -16rem;
-  margin-top: 4rem;
+  margin: 1rem;
 }
 
 .container-hazelnut {
@@ -102,7 +86,12 @@ p {
 }
 
 .form-control {
-  margin: 0.6rem;
+  margin: 0.68rem;
   background-color: transparent;
   border: white 1px solid;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
 }
