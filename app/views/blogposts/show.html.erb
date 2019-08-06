@@ -1,0 +1,18 @@
+<div class="container container-blogposts">
+  <div class="text-center">
+    <h1><%= @blogpost.title %></h1>
+  </div>
+  <div class="row mt-3">
+    <div class="col text-center">
+      <%= cl_image_tag @blogpost.photo, quality: :auto, fetch_format: :auto, class:"blogpost-photo" %>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col text-justify">
+      <p><%= @blogpost.content.html_safe %></p>
+      <p><em>Publié le <%= @blogpost.created_at.strftime("%d/%m/%Y") %></em></p>
+      <%= link_to "Retour à toutes les actualités", blogposts_path, class: "btn btn-ghost btn-ghost-black m-3" %>
+    </div>
+  </div>
+  <br>
+</div>

@@ -1,4 +1,28 @@
-<% @blogposts.each do |post| %>
-  <%= post.title %>
-  <%= post.content %>
-<% end %>
+<div class="container container-blogposts">
+  <div class="text-center">
+    <h1>Les actualités de Chez Valou</h1>
+  </div>
+  <% @blogposts.each do |blogpost| %>
+    <div class="card-blogpost mt-5">
+      <div class="mb-4 text-center text-lg-left">
+        <h2><%= blogpost.title %></h2>
+      </div>
+      <div class="row h-100">
+        <div class="col-xs-12 col-sm-6 my-auto">
+          <%= link_to blogpost_path(blogpost) do %>
+            <%= cl_image_tag blogpost.photo, quality: :auto, fetch_format: :auto, class: "blogpost-photo-small" %>
+          <% end %>
+        </div>
+        <div class="col-xs-12 col-sm-6 h-100">
+          <div class="mt-4 text-justify">
+            <%= blogpost.content.truncate(600, separator: ' ').html_safe %>
+            <p><em>Publié le <%= blogpost.created_at.strftime("%d/%m/%Y") %></em></p>
+          </div>
+          <br>
+          <%= link_to "Lire la suite", blogpost_path(blogpost), class: "btn btn-ghost btn-ghost-black" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <br><br>
+</div>
