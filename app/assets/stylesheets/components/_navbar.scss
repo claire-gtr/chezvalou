@@ -24,6 +24,20 @@
   font-family: $headers-font;
   color: white;
   font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  font-size: 0.85rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-item.active {
