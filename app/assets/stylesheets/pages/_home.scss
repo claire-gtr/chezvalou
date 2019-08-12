@@ -71,15 +71,16 @@ p {
 }
 
 .img-about {
-  height: 13rem;
+  max-width: 80%;
   border-radius: 2px;
   margin: 1rem;
 }
 
 .text-about {
+  max-width: 80%;
   border: $hazelnut 1.5px solid;
   padding: 1.5rem;
-  margin: 1rem;
+  margin: 1rem
 }
 
 .container-hazelnut {

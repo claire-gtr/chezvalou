@@ -1,3 +1,7 @@
+<% content_for :meta_title, "Chez Valou - #{@blogpost.title}" %>
+<% content_for :meta_description, @blogpost.content.truncate(120) %>
+<% content_for :meta_image, cl_image_path(@blogpost.photo) %>
+
 <div class="container container-blogposts">
   <div class="text-center">
     <h1><%= @blogpost.title %></h1>
