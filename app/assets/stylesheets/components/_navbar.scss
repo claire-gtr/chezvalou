@@ -36,7 +36,7 @@
 }
 
 .nav-item:hover {
-  font-size: 0.85rem;
+  color: $rasberry;
 }
 
 a {
@@ -48,6 +48,11 @@ a:hover {
   text-decoration: none;
 }
 
-.nav-item.active {
-  color: $rasberry;
+
+.navbar-nav {
+  background: $hazelnut;
+  text-align: right;
+  margin: 0;
+  padding: 1rem;
 }
+
