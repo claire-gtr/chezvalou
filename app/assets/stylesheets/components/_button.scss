@@ -1,11 +1,10 @@
 .btn-ghost {
   font-family: $body-font;
   color: white;
-  font-size: $font-text;
-  border: 1px solid white;
+  font-size: $font-size-base;
+  border: 2px solid white;
   padding: 8px 32px;
-  border-radius: 1px;
-  font-weight: lighter;
+  border-radius: 2px;
 }
 
 .btn-ghost:hover {

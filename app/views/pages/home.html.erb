@@ -27,21 +27,23 @@
       </div>
     </div>
   </div>
-  <div class="row justify-content-center">
-    <% @blogposts.each do |post| %>
-    <div class="col-xs-12 col-sm-4 text-center">
-      <div class="card-title">
-        <h3><%= post.title %></h3>
-      </div>
-      <div class="card">
-        <%= image_tag("#{post.photo}", alt: "#{post.title}", class: "card-img-top")%>
-        <div class="card-body text-left">
-          <p class="card-text"><%= post.content.truncate(150) %></p>
-          <em><%= link_to 'En savoir plus', blogpost_path(post), class:"card-link" %></em>
+  <div class="container">
+    <div class="row justify-content-center">
+      <% @blogposts.each do |post| %>
+      <div class="col-xs-12 col-md-4 text-center">
+        <div class="card-title">
+          <h3><%= post.title %></h3>
+        </div>
+        <div class="card">
+          <%= image_tag("#{post.photo}", alt: "#{post.title}", class: "card-img-top")%>
+          <div class="card-body text-left">
+            <p class="card-text"><%= post.content.truncate(150) %></p>
+            <em><%= link_to 'En savoir plus', blogpost_path(post), class:"card-link" %></em>
+          </div>
         </div>
       </div>
+    <% end %>
     </div>
-  <% end %>
   </div>
 </div>
 
@@ -63,21 +65,21 @@
       <div class="col list-for-who d-flex h-100r">
         <%= image_tag("home.png", alt: "home", class: "icon-for-who")%>
         <p class="justify-content-center align-self-cente">
-          Gourmands <strong> <span class="red-word">à domicile</span></strong> : anniversaires, fêtes de famille, naissances, fêtes religieuses, dîners entre amis,... </p>
+          Gourmands <strong> <span class="red-word">à domicile</span></strong> : anniversaires, fêtes de famille, naissances, fêtes religieuses, dîners entre amis, ... </p>
       </div>
     </div>
     <div class="row">
       <div class="col list-for-who d-flex h-100r">
         <%= image_tag("work.png", alt: "work", class: "icon-for-who")%>
         <p class="justify-content-center align-self-cente">
-          Gourmands <strong> <span class="red-word">au travail</span></strong> : comités d'entreprises, pots de départs, arbres de noël,... </p>
+          Gourmands <strong> <span class="red-word">au travail</span></strong> : comités d'entreprises, pots de départs, arbres de noël, ... </p>
       </div>
     </div>
     <div class="row">
       <div class="col list-for-who d-flex h-100r">
         <%= image_tag("asso.png", alt: "asso", class: "icon-for-who")%>
         <p class="justify-content-center align-self-cente">
-          Gourmands <strong> <span class="red-word">associatifs</span></strong> : fêtes et évenements annuels,... </p>
+          Gourmands <strong> <span class="red-word">associatifs</span></strong> : fêtes et évenements annuels, ... </p>
       </div>
     </div>
   </div>

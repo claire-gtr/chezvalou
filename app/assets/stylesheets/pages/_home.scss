@@ -29,6 +29,14 @@ h2 {
   margin-bottom: 0;
 }
 
+.card-title {
+  height: 2.5rem;
+}
+
+.card-img-top {
+  margin-top: 2rem;
+}
+
 .container-concept {
   background-color: white;
   h2 {
@@ -117,4 +125,9 @@ p {
   color: white;
   opacity: 1;
   font-size: $font-text;
+}
+
+textarea.form-control {
+  width: 95%;
+  height: 85%;
 }
