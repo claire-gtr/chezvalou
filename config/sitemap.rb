@@ -1,4 +1,4 @@
-# SitemapGenerator::Sitemap.default_host = 'https://www.chezvalou-patisserie.com'
+# SitemapGenerator::Sitemap.default_host = 'https://www.chezvaloupatisserie.fr'
 # SitemapGenerator::Sitemap.create do
 #   add root_path, :changefreq => 'daily', :priority => 1
 #   #

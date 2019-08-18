@@ -30,7 +30,7 @@ h2 {
 }
 
 .card-title {
-  height: 2.5rem;
+  height: 3rem;
 }
 
 .card-img-top {
@@ -84,7 +84,7 @@ p {
   height: 1px;
   border: 0;
   border-top: 1px solid $hazelnut;
-  margin: 1rem 12rem;
+  margin: 1rem 10rem;
   padding: 0;
 }
 
@@ -130,4 +130,11 @@ p {
 textarea.form-control {
   width: 95%;
   height: 85%;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -4.5rem;
+  visibility: hidden;
 }
