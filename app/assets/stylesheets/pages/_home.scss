@@ -5,7 +5,9 @@
  position: relative;
  padding-bottom: 9rem; /* height of your footer */
 }
-
+.container-login {
+  margin-top: 4.5rem;
+}
 .container-red {
   background-color: $rasberry;
 }
@@ -28,6 +30,15 @@ h2 {
   font-family: $headers-font;
   margin-bottom: 0;
 }
+
+h3 {
+    color: $hazelnut;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
 
 .card-title {
   height: 3rem;
@@ -141,4 +152,8 @@ textarea.form-control {
   position: relative;
   top: -4.5rem;
   visibility: hidden;
+}
+
+.numbers-div {
+  margin-bottom: 4rem;
 }

@@ -1,16 +1,16 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-md navbar-light navbar-lewagon">
   <div class="navbar-container-image d-flex h-100">
-    <%= link_to root_path, class: "navbar-brand justify-content-center align-self-center" do %>
+    <%= link_to root_path, class: "navbar-brand justify-content-center align-self-center mr-4" do %>
       <%= image_tag "logo.png" %>
     <% end %>
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <i class="fas fa-bars"></i>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav text-center text-md-right mr-auto">
+  <div class="collapse navbar-collapse flex-grow-1 ml-4" id="navbarSupportedContent">
+    <ul class="navbar-nav text-center text-md-right mr-auto d-flex justify-content-between w-100">
       <li>
         <%= link_to "ACTUALITÉS", blogposts_path, class: "nav-item" %>
       </li>

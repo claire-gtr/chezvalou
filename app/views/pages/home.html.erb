@@ -4,15 +4,23 @@
 <div class="banner">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 text-center">
+      <div class="col-xs-12 col-md-8 text-center">
       </div>
-      <div class="col-xs-12 col-sm-6 text-center pt-3 col-banner">
-        <div class="image-banner">
+      <div class="col-xs-12 col-md-4 text-center pt-3 mr-0 pr-0 d-none d-md-block">
+        <div class="image-banner mb-2">
           <%= image_tag "logo.png" %>
         </div>
         <h1>Création de pâtisseries à votre goût</h1>
-        <br>
-        <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        <a class="btn btn-ghost mt-4" href="#contact">Me contacter</a>
+      </div>
+      <div class="col-xs-12 col-md-6 text-center pt-3 d-block d-md-none">
+        <div class="col-banner">
+          <div class="image-banner mb-2">
+            <%= image_tag "logo.png" %>
+          </div>
+          <h1>Création de pâtisseries à votre goût</h1>
+          <a class="btn btn-ghost mt-4" href="#contact">Me contacter</a>
+        </div>
       </div>
     </div>
   </div>
@@ -56,10 +64,10 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container mb-3">
     <div class="row">
       <div class="col text-center">
-        <h4>Pour qui ?</h4>
+        <h3>Pour qui ?</h3>
       </div>
     </div>
     <div class="row">
@@ -90,12 +98,12 @@
 
   <div class="container">
     <div class="row">
-      <div class="col text-center">
-        <h4>Vos idées, nos créations !</h4>
+      <div class="col text-center mb-3 mt-3">
+        <h3>Vos idées, nos créations !</h3>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-6 text-center mb-4">
+      <div class="col-xs-12 col-sm-6 text-center numbers-div">
         <div class="number-step">
           1
         </div>
@@ -103,7 +111,7 @@
           <p>Vous me faites part de vos idées, et nous créons ensemble <strong> <span class="red-word">cette pâtisserie qui vous ressemble</span></strong></p>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 text-center mb-4">
+      <div class="col-xs-12 col-sm-6 text-center numbers-div">
         <div class="number-step">
           2
         </div>
@@ -111,7 +119,7 @@
           <p>Je passe en cuisine et prépare votre pâtisserie <strong> <span class="red-word">100% fait-maison</span></strong> avec des produits locaux et de saison</p>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 text-center mb-4">
+      <div class="col-xs-12 col-sm-6 text-center numbers-div">
         <div class="number-step">
           3
         </div>
@@ -119,7 +127,7 @@
           <p>Je vous livre <strong> <span class="red-word">à vélo </span></strong>(ou en voiture pour les événements hors zone, sur demande)</p>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 text-center mb-4">
+      <div class="col-xs-12 col-sm-6 text-center numbers-div">
         <div class="number-step">
           4
         </div>
@@ -149,7 +157,7 @@
     <div class="col-xs-12 col-lg-6 justify-content-center align-self-center">
       <div class="text-about mx-auto">
         <p>Moi, c'est Valérie, pâtissière passionnée ! Vous ne le croirez peut-être pas, mais avant de vivre de ma passion, j'étais ingénieure dans l'industrie. Une démission et un CAP pâtisserie plus tard me voilà désormais entrepreneuse... et heureuse ! C'est ce bonheur que je veux partager, et que j'aime retrouver dans les yeux des gourmands qui dégustent mes créations avec cette étincelle de plaisir qui tout simplement me fait adorer mon métier chaque jour.
-          <br>
+          <br><br>
         Perfectionniste - être ingénieure laisse des traces indélébiles - et inlassablement à la recherche de nouvelles idées gourmandes, je crée pour vous des <strong> <span class="red-word">pâtisseries sur-mesure </span></strong>(saveur, texture, visuel, vegan, sans gluten, sans allergies spécifiques, etc) et <strong> <span class="red-word">100% artisanales </span></strong>. Vous êtes tous concernés ! Ētes vous pêts à partager un moment gourmand ?</p>
       </div>
     </div>
@@ -168,12 +176,12 @@
   </div>
   <div class="row">
     <div class="col text-center">
-      <p>Envie d'une pâtisserie sur-mesure ? Grâce à cette carte interactive découvrez si <strong> <span class="red-word">Chez Valou Pâtisserie </span></strong>vient jusqu'à chez vous ! Des questions ? Vous êtes hors-zone ? N'hésitez pas à me contacter !</p>
+      <p>Envie d'une pâtisserie sur-mesure ? Grâce à cette carte découvrez si <strong> <span class="red-word">Chez Valou Pâtisserie </span></strong>vient jusqu'à chez vous ! <br>Des questions ? Vous êtes hors-zone ? N'hésitez pas à me contacter !</p>
     </div>
   </div>
   <br>
   <div class="row mb-4">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17lNUMXadeT0qdPNRDUG8qMaWiJW8d1t0" width="100%" height="480"></iframe>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17lNUMXadeT0qdPNRDUG8qMaWiJW8d1t0" width="100%" height="480"></iframe>
   </div>
 </div>
 
@@ -232,7 +240,7 @@
     </div>
   </div>      <!-- SnapWidget -->
   <script src="https://snapwidget.com/js/snapwidget.js"></script>
-  <iframe src="https://snapwidget.com/embed/725135" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+  <iframe src="https://snapwidget.com/embed/731008" class="snapwidget-widget mb-3 mt-3" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
 </div>
 
 

@@ -1,13 +1,13 @@
 .banner {
   background-size: cover;
   background-position:center;
-  background-image: image-url("banner.jpg");
+  background-image: image-url("banner.png");
   padding: 150px 0;
   height: 100vh;
 }
 
 .image-banner img {
-  width: 19rem;
+  max-width: 100%;
   margin-bottom: 0.25rem;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .col-banner {
-  background-color: rgba(255,255,255, 0.6);
+  background-color: rgba(255,255,255, 0.4);
   padding-bottom: 1rem;
 }
 

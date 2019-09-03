@@ -20,19 +20,19 @@
 }
 
 .nav-item {
-  margin: 0.3rem;
   font-family: $headers-font;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   text-decoration: none;
+  letter-spacing: 0.175rem;
 }
 
 .nav-item a {
-  margin: 0.3rem;
   font-family: $headers-font;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   text-decoration: none;
+  letter-spacing: 0.2rem;
 }
 
 .nav-item:hover {
@@ -48,11 +48,16 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar-collapse {
+  flex-grow: 2;
+}
 
 .navbar-nav {
   background: $hazelnut;
   padding: 1rem;
 }
 
-
-
+.navbar-toggler {
+  border: none;
+  color: white !important;
+}

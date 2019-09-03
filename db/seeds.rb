@@ -8,5 +8,5 @@
 puts "destroying all users..."
 User.destroy_all
 puts "creating admin user..."
-User.create(email: "claire@gmail.com", password: "1234567", admin: true)
+User.create(email: "contact.chezvalou@gmail.com", password: "adminchezvalou", admin: true)
 puts "admin user created!"
