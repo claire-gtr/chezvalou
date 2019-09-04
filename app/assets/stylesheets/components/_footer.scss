@@ -4,11 +4,25 @@
   align-items: center;
   justify-content: space-between;
   height: 9rem;
-  padding: 0px 10px;
+  padding: 0 1rem;
   color: rgba(0,0,0,0.3);
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    height: 12rem;
+    padding-bottom: 2rem;
+  }
+  .footer-item {
+    margin-bottom: 0.4rem;
+  }
+  .footer :nth-child(1) { order: 3; }
+  .footer :nth-child(2) { order: 1; }
+  .footer :nth-child(3) { order: 2; }
 }
 
 .footer p {

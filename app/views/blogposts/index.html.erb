@@ -1,11 +1,15 @@
+<% content_for :meta_title, "Chez Valou - Actualités" %>
+<% content_for :meta_description, "Découvrez les dernières actualités de Chez Valou Pâtisserie - Pâtisserie sur mesure pour vos évenements : baptêmes, anniversaires, mariages, communions, fêtes religieuses" %>
+<% content_for :meta_image, cl_image_path(@blogposts.last.photo) %>
+
 <div class="container container-blogposts">
   <div class="text-center">
-    <h1>Les actualités de Chez Valou</h1>
+    <h2>Les actualités de Chez Valou</h2>
   </div>
   <% @blogposts.each do |blogpost| %>
     <div class="card-blogpost mt-5">
       <div class="mb-4 text-center text-lg-left">
-        <h2><%= blogpost.title %></h2>
+        <h3><%= blogpost.title %></h3>
       </div>
       <div class="row h-100">
         <div class="col-xs-12 col-sm-6 my-auto">

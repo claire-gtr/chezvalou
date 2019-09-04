@@ -48,6 +48,12 @@ h3 {
   margin-top: 2rem;
 }
 
+.container-blogposts {
+  h2 {
+    color: $rasberry;
+  }
+}
+
 .container-concept {
   background-color: white;
   h2 {
@@ -130,6 +136,7 @@ p {
   margin: 0.68rem;
   background-color: transparent;
   border: white 1px solid;
+  border-radius: 0px;
 }
 
 .form-control::placeholder {
@@ -144,7 +151,8 @@ textarea.form-control {
 }
 
 .form-row {
-  margin: 0;
+  margin: auto;
+  max-width: 60rem;
 }
 
 .anchor {
