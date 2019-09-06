@@ -88,6 +88,7 @@ p {
 
 .red-word {
   color: $rasberry;
+  font-weight: lighter;
 }
 
 .icon-for-who {
@@ -154,7 +155,6 @@ textarea.form-control {
   margin: auto;
   max-width: 60rem;
 }
-
 .anchor {
   display: block;
   position: relative;
@@ -170,12 +170,18 @@ textarea.form-control {
 @media screen and (min-width:992px) {
     .img-about {
       width: 100%;
-      margin-right: -8rem !important;
+      margin-right: -6rem !important;
+      margin-top: 0;
     }
 
     .text-about {
-      margin-left: -8rem !important;
-      margin-top: 10rem;
+      margin-left: -6rem !important;
+      margin-top: 8rem;
       max-width: 100%;
     }
+}
+
+.row-about {
+  margin: auto;
+  max-width: 70rem;
 }

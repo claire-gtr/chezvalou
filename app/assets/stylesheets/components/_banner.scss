@@ -4,10 +4,11 @@
   background-image: image-url("banner.png");
   padding: 150px 0;
   height: 100vh;
+  margin-top: 4.5rem;
 }
 
 .image-banner img {
-  max-width: 100%;
+  max-width: 90%;
   margin-bottom: 0.25rem;
 }
 
@@ -18,10 +19,12 @@
   font-size: 1.2rem;
   font-weight: bold;
   font-family: $body-font;
+  max-width: 100%;
 }
 
 .col-banner {
   background-color: rgba(255,255,255, 0.4);
   padding-bottom: 1rem;
+  padding-right: 0;
 }
 
