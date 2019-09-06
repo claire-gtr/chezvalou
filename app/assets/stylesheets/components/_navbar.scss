@@ -68,3 +68,21 @@ a:hover {
     margin-left: 10rem;
   }
 }
+
+@media screen and (min-width:992px) {
+  .navbar-collapse {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width:1224px) {
+  .navbar-collapse {
+    margin-left: 24rem;
+  }
+}
+
+@media screen and (min-width:1824px) {
+  .navbar-collapse {
+    margin-left: 32rem;
+  }
+}
