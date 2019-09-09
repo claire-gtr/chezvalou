@@ -12,6 +12,15 @@
   margin-bottom: 0.25rem;
 }
 
+@media screen and (min-width:992px) {
+  .image-banner img {
+    max-width: 110%;
+  }
+  .row-banner {
+    width: 100%;
+  }
+}
+
 .banner h1 {
   margin: 0;
   color: white;
@@ -23,7 +32,7 @@
 }
 
 .col-banner {
-  background-color: rgba(255,255,255, 0.4);
+  background-color: rgba(233,197,183, 0.6);
   padding-bottom: 1rem;
   padding-right: 0;
 }
