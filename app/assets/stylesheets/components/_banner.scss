@@ -3,7 +3,7 @@
   background-position:center;
   background-image: image-url("banner.png");
   padding: 150px 0;
-  height: 100vh;
+  height: calc(100vh - 4.5rem);
   margin-top: 4.5rem;
 }
 
