@@ -185,3 +185,12 @@ textarea.form-control {
   margin: auto;
   max-width: 70rem;
 }
+
+input[type="text"]
+{
+  font-size: $font-text;
+}
+
+textarea {
+  font-size: $font-text !important;
+}

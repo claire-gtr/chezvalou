@@ -43,11 +43,15 @@
           <h3><%= post.title %></h3>
         </div>
         <div class="card">
-          <%= image_tag("#{post.photo}", alt: "#{post.title}", class: "card-img-top")%>
-          <div class="card-body text-left">
-            <p class="card-text"><%= post.content.truncate(150) %></p>
-            <em><%= link_to 'En savoir plus', blogpost_path(post), class:"card-link" %></em>
-          </div>
+          <%= link_to blogpost_path(post) do  %>
+            <%= image_tag("#{post.photo}", alt: "#{post.title}", class: "card-img-top")%>
+            <div class="card-body text-left">
+              <p class="card-text"><%= post.content.truncate(150) %></p>
+              <div class="card-link">
+                <em> En savoir plus</em>
+              </div>
+            </div>
+          <% end %>
         </div>
       </div>
     <% end %>
@@ -158,7 +162,7 @@
       <div class="text-about mx-auto">
         <p>Moi, c'est Valérie, pâtissière passionnée ! Vous ne le croirez peut-être pas, mais avant de vivre de ma passion, j'étais ingénieure dans l'industrie. Une démission et un CAP pâtisserie plus tard me voilà désormais entrepreneuse... et heureuse ! C'est ce bonheur que je veux partager, et que j'aime retrouver dans les yeux des gourmands qui dégustent mes créations avec cette étincelle de plaisir qui tout simplement me fait adorer mon métier chaque jour.
           <br><br>
-        Perfectionniste - être ingénieure laisse des traces indélébiles - et inlassablement à la recherche de nouvelles idées gourmandes, je crée pour vous des <strong> <span class="red-word">pâtisseries sur-mesure </span></strong>(saveur, texture, visuel, vegan, sans gluten, sans allergies spécifiques, etc) et <strong> <span class="red-word">100% artisanales </span></strong>. Vous êtes tous concernés ! Ētes vous pêts à partager un moment gourmand ?</p>
+        Perfectionniste - être ingénieure laisse des traces indélébiles - et inlassablement à la recherche de nouvelles idées gourmandes, je créé pour vous des <strong> <span class="red-word">pâtisseries sur-mesure </span></strong>(saveur, texture, visuel, vegan, sans gluten, sans allèrgenes, etc) et <strong> <span class="red-word">100% artisanales </span></strong>. Vous êtes tous concernés ! Ētes vous prêts à partager un moment gourmand ?</p>
       </div>
     </div>
   </div>
@@ -209,17 +213,17 @@
         </div>
         <div class="form-row mt-2">
           <div class="col">
-            <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="Email" required="">
+            <input type="text" class="form-control" name="_replyto" id="email-address" placeholder="Email" required="">
           </div>
         </div>
         <div class="form-row mt-2">
           <div class="col">
-            <input type="telephone" class="form-control" name="telephone" id="telephone" placeholder="Téléphone">
+            <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Téléphone">
           </div>
         </div>
       </div>
       <div class="col">
-        <textarea name="complaint" rows="6" id="complaint" class="form-control" placeholder="Message" required=""></textarea>
+        <textarea name="complaint" rows="7" id="complaint" class="form-control" placeholder="Message" required=""></textarea>
       </div>
     </div>
     <input type="hidden" name="_subject" id="email-subject" value="Contact via site web">

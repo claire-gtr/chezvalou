@@ -15,16 +15,16 @@
         <%= link_to "ACTUALITÉS", blogposts_path, class: "nav-item" %>
       </li>
       <li>
-        <a href="#concept" class="nav-item">CONCEPT</a>
+        <%= link_to "CONCEPT", root_path(anchor: "concept"), class: "nav-item" %>
       </li>
       <li>
-        <a href="#about" class="nav-item">À PROPOS</a>
+        <%= link_to "À PROPOS", root_path(anchor: "about"), class: "nav-item" %>
       </li>
       <li>
-        <a href="#shipping" class="nav-item">LIVRAISON</a>
+        <%= link_to "LIVRAISON", root_path(anchor: "shipping"), class: "nav-item" %>
       </li>
       <li>
-        <a href="#contact" class="nav-item">CONTACT</a>
+        <%= link_to "CONTACT", root_path(anchor: "contact"), class: "nav-item" %>
       </li>
     </ul>
   </div>
